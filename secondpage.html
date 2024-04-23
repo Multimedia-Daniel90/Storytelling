@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Selection</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
+</head>
+<body>
+    <div id="activity-container">
+        <div id="aktivitettekst">
+            <h2>Vælg en aktivitet nedenfor <br> ved at trykke på billedet.</h2>
+        </div>
+        <div class="activity" id="activityeinstein">
+            <!-- Wrap the image and paragraph inside the anchor tag -->
+            <a href="thirdpage.html">
+                <img src="images/professor 2.png" alt="Einstein">
+                <p>Led efter stjerner <br> med Einstein</p>
+            </a>
+        </div>
+        <!-- The rest of the activities remain the same -->
+        <div class="activity" id="activity-klogere">
+            <img src="images/spaceman.png" alt="spaceman">
+            <p>Bliv klogere på dig selv <br> med andre</p>
+        </div>
+        <div class="activity" id="activity-space">
+            <img src="images/rummet.png" alt="Space">
+            <p>Lær om rummet</p>
+        </div>
+    </div>
+    <div id="professor-text2" onclick="toggleAudio2();">
+        Klik på mig
+    </div>
+    <audio id="vaelgensti" src="audio/Vælg en aktivitet ne.m4a" ></audio>
+    <script src="script.js"></script>
+</body>
+</html>

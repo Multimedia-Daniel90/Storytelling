@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steno Museum App</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
+</head>
+<body>
+    <div id="app-container">
+        <img id="nebulabackground" src="images/nebula.png" alt="Nebula">
+        <div id="interactive-elements">
+          <img id="rotating-moon" src="images/moon.png" alt="Rotating Moon">
+          <img id="professor-animation" src="images/professor.png" alt="Animated Professor">
+          <a href="secondpage.html">
+            <button id="start-button-1">START</button>
+        </a>        
+          <div id="welcometext">
+            Velkommen <br> til <br> Steno
+          </div>
+        </div>
+    </div>
+    <div id="professor-text1" onclick="toggleAudio1();">
+        Klik på mig
+    </div>
+    <audio id="welcomeaudio" src="audio/Velkommen til Steno .m4a" ></audio>
+    <script src="script.js"></script>
+</body>
+</html>

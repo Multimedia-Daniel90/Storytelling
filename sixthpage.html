@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Example</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <img id="nebulabackground6" src="images/nebula.png" alt="nebula">
+    <div class="page-container">
+        <!-- QR code container -->
+<div class="qr-container">
+    <p>Scan QR kode her!</p>
+    <!-- Make the QR code clickable by wrapping it in an anchor tag -->
+    <a href="seventhpage.html"> <!-- Update this href to the correct path -->
+        <img src="images/qrkode.png" alt="QR Code">
+    </a>
+</div>
+        <!-- Professor image at the bottom right -->
+        <img src="images/professor.png" alt="Professor" class="professor-image">
+    </div>
+    <div id="professor-text6" onclick="toggleAudio6();">
+        Klik på mig
+    </div>
+    <audio id="scanqrkoden" src="audio/Scan Qr koden her og.m4a" ></audio>
+    <script src="script.js"></script>
+</body>
+</html>

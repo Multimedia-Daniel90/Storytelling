@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow the Path</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<div id="fifth-page-container">
+<img src="images/fifthpageback.jpg" alt="background">
+</div>
+
+    <!-- Container for the path and arrows -->
+    <div class="path-container">
+
+        <!-- Animated arrows indicating direction -->
+        <div class="path-container-2">
+            <div class="arrow" id="arrow1">&#8593;</div> <!-- Unicode up arrow -->
+            <div class="arrow" id="arrow2">&#8593;</div>
+            <div class="arrow" id="arrow4">&#8593;</div>
+        </div>
+    </div>
+
+    <!-- Professor instructing the user -->
+    <img src="images/professor.png" alt="Professor" class="professor-image-5">
+    
+    <!-- Pop-up fun fact message -->
+    <div class="fun-fact-popup" id="funFact">
+        <p>Fun fact! Vidste du at mennesket <br> består af 206 knogler?</p>
+        <button onclick="document.getElementById('funFact').style.display='none';">X</button>
+    </div>
+
+    <div class="right-sidebar">
+        <a href="sixthpage.html">
+            <img src="images/phone.png" alt="phone">
+        </a>    
+        <img src="images/flash.png" alt="flash">
+        <img src="images/info.png" alt="info">
+        <img src="images/speaker.png" alt="speaker">
+        <img src="images/heartlogo (2).png" alt="heart">
+        <img src="images/smil.png" alt="smil">
+        <img src="images/unhappy.png" alt="unhappy">
+        <img src="images/star.png" alt="star">
+        <img src="images/no.png" alt="no">
+    </div>
+
+  <!-- Pop-up fun fact message -->
+  <div class="fun-fact-popup" id="funFact">
+    <p>Fun fact! Vidste du at mennesket består af 206 knogler?</p>
+    <button onclick="document.getElementById('funFact').style.display='none';">X</button>
+</div>
+
+<script src="fifthpage.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.getElementById('funFact').style.display = 'block';
+    }, 3000); // 3000 milliseconds = 3 seconds
+});
+</script>
+
+
+<div id="professor-text5" onclick="toggleAudio5();">
+    Klik på mig
+</div>
+<audio id="stien" src="audio/Følg stien og gå på .m4a" ></audio>
+<script src="script.js"></script>
+</body>
+</html>

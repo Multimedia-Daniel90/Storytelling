@@ -1,0 +1,635 @@
+ /* General styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+/* App container */
+#app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/* General styles for the nebula background */
+#nebulabackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures the background is behind other elements */
+}
+
+#interactive-elements {
+    position: relative;
+    z-index: 1; /* Ensures interactive elements are above the background */
+    width: 100%;
+    height: 100%;
+}
+
+/* Rotating moon */
+#rotating-moon {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    position: absolute;
+    left: 50%;
+    bottom: 39%; /* Adjust position as needed */
+    transform: translateX(-50%) rotate(0deg);
+    animation: rotate 60s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcometext {
+    color: black; /* Text color */
+    font-size: 30px; /* Text size */
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+     
+
+}
+
+/* Keyframes for rotating moon */
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+/* Professor Animation */
+#professor-animation {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    position: absolute;
+    bottom: 14%;
+    right: 3%; /* Adjust position as needed */
+}
+
+#professor-text1 {
+    position: absolute;
+    bottom: 210px; /* Adjust based on professor image position */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    z-index: 5;
+    opacity: 85%;
+    font-weight: bold;
+}
+
+/* Start Button */
+#start-button-1 {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10%; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Second page */
+
+/* General styles for the entire page */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Example font */
+  }
+  
+  /* Centering and styling the activity container */
+  #activity-container {
+    text-align: center; /* Centers inline elements */
+    padding: 20px; /* Adds some padding around the container */
+  }
+  
+  /* Styling the text area for the heading */
+  #aktivitettekst h2 {
+    font-size: 1.5em; /* Adjust the size of the heading */
+    color: #000000; /* Sets the text color */
+    margin-top: 20px; /* Adds space at the top */
+  }
+  
+  /* Styles that apply to all activity blocks */
+  .activity {
+    position: relative; /* Sets position context for absolutely positioned children */
+    display: inline-block; /* Allows blocks to be centered via text-align on the container */
+    margin: 20px; /* Adds spacing around each activity */
+  }
+  
+  .activity img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Correct block display */
+  }
+  
+  .activity p {
+    position: absolute; /* Absolutely position the paragraph */
+    top: 85%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the position by half the element's width and height */
+    width: 100%; /* Set the width to match the parent */
+    color: #000000; /* Text color */
+    font-size: 20px;
+    text-align: center; /* Center text within the paragraph element */
+    margin: 0; /* Remove default margins */
+    background: rgb(255, 255, 255); /* Optional: adds a semi-transparent background to the text for readability */
+  }
+  
+  #professor-text2 {
+    position: absolute;
+    bottom: 430px; /* Adjust based on professor image position */
+    left: 75px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    z-index: 5;
+    opacity: 85%;
+    font-weight: bold;
+}
+  /* Third page */
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#third-page-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-box {
+    background-color: rgb(255, 255, 255); /* White background with opacity */
+    padding: 20px; /* Padding inside the box */
+    margin: 5%; /* Margin around the box */
+    max-width: 90%; /* Maximum width of the box */
+    text-align: center; /* Center the text */
+    margin-top: 50px;
+}
+
+.content-box h2 {
+    font-size: 25px;
+    margin-bottom: 0.5em;
+}
+
+.content-box p {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjust this if you need a different alignment */
+}
+
+.start-button-3 {
+    text-decoration: none;
+    color: inherit; /* Inherit the text color from the parent */
+}
+
+.start-button-3 {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none; /* If your button is a link, remove the underline */
+    display: inline-block; /* Allows for proper padding and size */
+    margin: 0 auto; /* If the button is a standalone element and not a link */
+    margin-left: 200px;
+}
+
+.professor-image-3 {
+    margin-left: -50px; /* Adds space between the button and the image */
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Keep the aspect ratio */
+    margin-top: -40px;
+}
+
+#professor-text3 {
+    position: absolute;
+    bottom: 150px; /* Adjust based on professor image position */
+    right: 45px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    z-index: 5;
+    opacity: 85%;
+    font-weight: bold;
+}
+
+ /* Fourth page */
+
+ #scroll-container {
+    max-width: 800px; /* Or any max-width that fits your design */
+    margin: auto; /* This will center the container */
+    padding: 20px; /* Provides some internal spacing */
+    background-color: black;
+}
+
+#scroll-container p {
+    color: white;
+    font-size: 20px;
+}
+
+#image-list {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    justify-content: space-evenly; /* Space out items evenly */
+    align-items: center; /* Align items vertically */
+}
+
+.image-pair {
+    display: flex;
+    justify-content: center; /* Center the pair horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure images stay side by side */
+    width: 100%; /* Full width to accommodate child elements */
+}
+
+.treasure {
+    width: 300px; /* Slightly less than half to accommodate padding/margin */
+    padding: 5px; /* Padding to prevent images from touching */
+    box-sizing: border-box; /* Padding included in the width calculation */
+}
+
+.treasure img {
+    max-width: 100%; /* Images will fill the available width within their anchor tag */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-pair-2 {
+    display: flex;
+    justify-content: center; /* Center the pair horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure images stay side by side */
+    width: 100%; /* Full width to accommodate child elements */
+}
+
+.treasure-2 {
+    width: 300px; /* Slightly less than half to accommodate padding/margin */
+    padding: 5px; /* Padding to prevent images from touching */
+    box-sizing: border-box; /* Padding included in the width calculation */
+}
+
+.treasure-2 img {
+    max-width: 100%; /* Images will fill the available width within their anchor tag */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#professor {
+    position: fixed;
+    right: -40px; /* Position the professor 20px from the right */
+    bottom: 20px; /* Position the professor 20px from the bottom */
+    width: 250px; /* Set the width of the professor image */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* Or block depending on layout */
+}
+
+.image-container img {
+    display: block; /* Removes bottom space/gap */
+    width: 100%; /* Responsive image */
+    height: auto;
+}
+
+#professor-text4 {
+    position: fixed;
+    bottom: 165px; /* Adjust based on professor image position */
+    right: 70px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    z-index: 5;
+    opacity: 85%;
+    font-weight: bold;
+}
+
+ /* Fifth page */
+
+ body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#fifth-page-container img {
+        position: fixed; /* or 'absolute' if .path-container is 'relative' */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        z-index:0; /* Behind the gradient and arrows */
+    }
+    
+    .path-container {
+        position: fixed; /* Higher stacking context than .background-image */
+        width: 15%; /* Full width */
+        height: 60vh; /* Full viewport height */
+        opacity: 40%;
+        background: linear-gradient(to top, #006400, #98FB98); /* Green gradient */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 100px;
+        margin-top: 300px;
+        z-index: 2; /* Above the background image */
+    }
+
+.arrow {
+    font-size: 6em; /* Adjust size as needed */
+    color: white; /* Arrow color */
+    animation: moveArrow 2s infinite; /* Adjust '2s' to control speed */
+    z-index: 3;
+}
+
+/* Position the arrows with different starting points */
+#arrow1 { animation-delay: 0s; }
+#arrow2 { animation-delay: 0.5s; }
+#arrow4 { animation-delay: 1.0s; }
+
+/* Keyframes for moving arrows animation */
+@keyframes moveArrow {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0px); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.professor-image-5 {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width: 250px; /* Adjust as needed */
+    z-index: 2;
+}
+
+.fun-fact-popup {
+    display: none; /* Hide pop-up initially */
+    position: fixed; /* Fixed position */
+    right: 30px; /* Distance from the right */
+    top: 40px; /* Distance from the top */
+    z-index: 100; /* Make sure it's on top of other elements */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border properties */
+    padding: 20px; /* Padding inside the pop-up */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Shadow for better visibility */
+}
+
+.fun-fact-popup button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.right-sidebar {
+    position: fixed; /* Fixed position to keep it visible while scrolling */
+    top: 50%; /* Align vertically at the center of the viewport */
+    right: 35px; /* Align to the right side of the viewport */
+    transform: translateY(-50%); /* Center align the div vertically */
+    width: 50px; /* Adjust width based on the size of your images */
+    z-index: 10; /* Make sure it's above other content if needed */
+}
+
+.right-sidebar img {
+    display: block; /* Stack images vertically */
+    width: 170%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: -40px; /* Space between images */
+}
+
+#professor-text5 {
+    position: fixed;
+    bottom: 225px; /* Adjust based on professor image position */
+    right: 40px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    z-index: 5;
+    opacity: 85%;
+    font-weight: bold;
+}
+
+
+/* sixth page */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-size: hidden;
+}
+
+#nebulabackground6 {
+    position: fixed; /* Fixed position to cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    z-index: -1; /* Set behind other content */
+    object-fit: cover; /* Cover the entire area without stretching */
+}
+
+.page-container {
+    position: relative;
+    height: 100vh;
+}
+
+.qr-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -65px;
+}
+
+.qr-container p {
+    margin-bottom: 10px;
+    font-size: 2em;
+    /* Additional styling for the text */
+}
+
+.qr-container img {
+    max-width: 80vw; /* Scales the QR code for smaller viewports */
+    max-height: 80vh;
+}
+
+.professor-image {
+    position: fixed;
+    right: 10px; /* Adjust as needed */
+    bottom: 10px; /* Adjust as needed */
+    width: 250px; /* Adjust as needed */
+    margin-bottom: -30px;
+}
+
+#professor-text6 {
+    position: fixed;
+    bottom: 125px; /* Adjust based on professor image position */
+    right: 120px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    z-index: 5;
+    opacity: 85%;
+    font-weight: bold;
+}
+
+/* seventh page - samme CCS style som page 4 */
+
+
+/* eight page */
+
+/* App container */
+#app-container-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/* General styles for the nebula background */
+#starbackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures the background is behind other elements */
+}
+
+#interactive-jupiter {
+    position: relative;
+    z-index: 1; /* Ensures interactive elements are above the background */
+    width: 100%;
+    height: 100%;
+}
+
+#jupiter {
+    width: 300px; /* Adjust size as needed */
+    height: 700px; /* Adjust size as needed */
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    animation: rotate 60s linear infinite;
+    bottom: 10%; /* Adjust position as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-popup2 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000; /* Make sure it's above other content */
+    text-align: center;
+}
+
+.quiz-content2 {
+    position: relative;
+}
+
+.answer-btn2 {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.close-btn2 {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#professor-image-8 {
+    position: fixed; /* Fixed position relative to the viewport */
+    right: 10px; /* 10 pixels from the right edge of the viewport */
+    bottom: 10px; /* 10 pixels from the bottom edge of the viewport */
+    width: 300px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it's above other page elements */
+}
